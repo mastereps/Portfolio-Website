@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 type NavItem = {
   label: string;
   href: string;
@@ -38,7 +40,7 @@ const projects: Project[] = [
       "A training and consultancy website for a PRC-accredited provider, built to present webinars, learning paths, company information, and contact pathways for educators and learners.",
     stack: ["React", "Vite", "Typescript", "Tailwind CSS", "Responsive UI"],
     demoUrl: "https://cequenatraining.com/",
-    image: "/img/ctc_training.png",
+    image: asset("img/ctc_training.png"),
   },
   {
     category: "Freelance",
@@ -47,7 +49,7 @@ const projects: Project[] = [
       "A real estate website for a licensed broker offering residential buying and selling services across Florida, with a focus on the Orlando area.",
     stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "WordPress", "PHP"],
     demoUrl: "https://stacysellshomes.com",
-    image: "/img/stacy.png",
+    image: asset("img/stacy.png"),
   },
   {
     category: "Freelance",
@@ -56,7 +58,7 @@ const projects: Project[] = [
       "A personal real estate website showcasing top-tier buyer, seller, and relocation services throughout the Tri-Valley and San Francisco Bay Area.",
     stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "WordPress", "PHP"],
     demoUrl: "https://soldbylouisa.com/",
-    image: "/img/louisa.png",
+    image: asset("img/louisa.png"),
   },
   {
     category: "Capstone",
@@ -76,7 +78,7 @@ const projects: Project[] = [
       "Fetch API",
     ],
     demoUrl: "https://drive.google.com/file/d/1h0Rs35EeU75jgjwuIQp03ufup37aPrcC/view?t=10",
-    image: "/img/mihis.png",
+    image: asset("img/mihis.png"),
   },
   {
     category: "OJT",
@@ -85,7 +87,7 @@ const projects: Project[] = [
       "A secure ticket management platform for PhilHealth that streamlines request submissions, document handling, and status tracking, with built-in validation, file uploads, and email notifications.",
     stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "PHP", "CodeIgniter", "MySQL"],
     demoUrl: "https://drive.google.com/file/d/1SZT_GJB6aqMV4X3AV-xlSRxek03Z5wVX/view?t=2",
-    image: "/img/cypher.png",
+    image: asset("img/cypher.png"),
   },
 ];
 
@@ -99,28 +101,28 @@ const groupedProjects = Array.from(
 );
 
 const skills: SkillItem[] = [
-  { name: "HTML", icon: "/img/html-logo.svg" },
-  { name: "CSS", icon: "/img/css-logo.svg" },
-  { name: "Bootstrap", icon: "/img/bootstrap-logo.svg" },
-  { name: "Javascript", icon: "/img/js-logo.svg" },
-  { name: "jQuery", icon: "/img/jquery-logo.svg" },
-  { name: "Typescript", icon: "/img/typescript-logo.svg" },
-  { name: "ExpressJs", icon: "/img/express-logo.svg" },
-  { name: "NodeJs", icon: "/img/node-logo.svg" },
-  { name: "Angular", icon: "/img/angular-icon.svg", iconClassName: "w-14" },
-  { name: "React", icon: "/img/react-logo.svg" },
-  { name: "PHP", icon: "/img/php-logo.svg" },
-  { name: "CodeIgniter", icon: "/img/codeigniter.svg", iconClassName: "w-10" },
-  { name: "MySQL", icon: "/img/mysql-logo.svg" },
-  { name: "MongoDB", icon: "/img/mongodb-logo.svg" },
-  { name: "WordPress", icon: "/img/wordpress-logo.svg" },
+  { name: "HTML", icon: asset("img/html-logo.svg") },
+  { name: "CSS", icon: asset("img/css-logo.svg") },
+  { name: "Bootstrap", icon: asset("img/bootstrap-logo.svg") },
+  { name: "Javascript", icon: asset("img/js-logo.svg") },
+  { name: "jQuery", icon: asset("img/jquery-logo.svg") },
+  { name: "Typescript", icon: asset("img/typescript-logo.svg") },
+  { name: "ExpressJs", icon: asset("img/express-logo.svg") },
+  { name: "NodeJs", icon: asset("img/node-logo.svg") },
+  { name: "Angular", icon: asset("img/angular-icon.svg"), iconClassName: "w-14" },
+  { name: "React", icon: asset("img/react-logo.svg") },
+  { name: "PHP", icon: asset("img/php-logo.svg") },
+  { name: "CodeIgniter", icon: asset("img/codeigniter.svg"), iconClassName: "w-10" },
+  { name: "MySQL", icon: asset("img/mysql-logo.svg") },
+  { name: "MongoDB", icon: asset("img/mongodb-logo.svg") },
+  { name: "WordPress", icon: asset("img/wordpress-logo.svg") },
 ];
 
 const tools: SkillItem[] = [
-  { name: "Git", icon: "/img/git-logo.svg" },
-  { name: "Github", icon: "/img/github-logo.svg" },
-  { name: "Figma", icon: "/img/figma-logo.svg" },
-  { name: "Photoshop", icon: "/img/photoshop-logo.svg" },
+  { name: "Git", icon: asset("img/git-logo.svg") },
+  { name: "Github", icon: asset("img/github-logo.svg") },
+  { name: "Figma", icon: asset("img/figma-logo.svg") },
+  { name: "Photoshop", icon: asset("img/photoshop-logo.svg") },
 ];
 
 const socialLinks = [
@@ -192,7 +194,7 @@ function App() {
             <span className="font-serif text-xl font-semibold tracking-[0.18em] text-ink sm:text-2xl">
               master eps
             </span>
-            <img src="/img/happy.png" alt="" className="h-10 w-10 object-contain" />
+            <img src={asset("img/happy.png")} alt="" className="h-10 w-10 object-contain" />
           </a>
 
           <nav className="hidden items-center gap-8 lg:flex">
@@ -206,7 +208,7 @@ function App() {
               ))}
             </ul>
             <a
-              href="/docs/CV_Gondraneos.pdf"
+              href={asset("docs/CV_Gondraneos.pdf")}
               download="Efraim_Gondraneos_CV.pdf"
               className="rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
             >
@@ -270,7 +272,7 @@ function App() {
           ))}
         </ul>
         <a
-          href="/docs/CV_Gondraneos.pdf"
+          href={asset("docs/CV_Gondraneos.pdf")}
           download="Efraim_Gondraneos_CV.pdf"
           className="inline-flex w-fit rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
           onClick={() => setMenuOpen(false)}
@@ -415,9 +417,10 @@ function App() {
             <SectionTitle label="About" highlight="Me" />
 
             <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_1.15fr]">
-              <div className="about-frame flex justify-center rounded-[2rem] bg-[url('/img/about-bg-accent.png')] bg-cover bg-center p-4 sm:p-6">
+              <div className="about-frame flex justify-center rounded-[2rem] bg-cover bg-center p-4 sm:p-6"
+                style={{ backgroundImage: `url(${asset("img/about-bg-accent.png")})` }}>
                 <img
-                  src="/img/about-me.JPG"
+                  src={asset("img/about-me.JPG")}
                   alt="Efraim Gondraneos"
                   className="h-[420px] w-full max-w-md rounded-[999px] border-[6px] border-black object-cover sm:h-[560px]"
                 />
@@ -605,5 +608,6 @@ function PinIcon() {
 }
 
 export default App;
+
 
 
