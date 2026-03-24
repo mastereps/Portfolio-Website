@@ -208,7 +208,7 @@ function App() {
               ))}
             </ul>
             <a
-              href={asset("docs/CV_Gondraneos.pdf")}
+              href={asset("docs/Efraim_Gondraneos_CV.pdf")}
               download="Efraim_Gondraneos_CV.pdf"
               className="rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
             >
@@ -272,7 +272,7 @@ function App() {
           ))}
         </ul>
         <a
-          href={asset("docs/CV_Gondraneos.pdf")}
+          href={asset("docs/Efraim_Gondraneos_CV.pdf")}
           download="Efraim_Gondraneos_CV.pdf"
           className="inline-flex w-fit rounded-xl bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
           onClick={() => setMenuOpen(false)}
@@ -608,6 +608,7 @@ function PinIcon() {
 }
 
 export default App;
+
 
 
 
