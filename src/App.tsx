@@ -38,8 +38,7 @@ const projects: Project[] = [
       "A training and consultancy website for a PRC-accredited provider, built to present webinars, learning paths, company information, and contact pathways for educators and learners.",
     stack: ["React", "Vite", "Typescript", "Tailwind CSS", "Responsive UI"],
     demoUrl: "https://cequenatraining.com/",
-    previewLabel: "cequenatraining.com",
-    previewNote: "PRC-accredited webinar and training platform",
+    image: "/img/ctc_training.png",
   },
   {
     category: "Freelance",
@@ -606,4 +605,5 @@ function PinIcon() {
 }
 
 export default App;
+
 
