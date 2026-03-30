@@ -89,6 +89,24 @@ const projects: Project[] = [
     demoUrl: "https://drive.google.com/file/d/1SZT_GJB6aqMV4X3AV-xlSRxek03Z5wVX/view?t=2",
     image: asset("img/cypher.png"),
   },
+  {
+    category: "Personal",
+    title: "Music Chords",
+    description:
+      "A mobile-first chord-sheet web app for searching songs, reading chord sheets, transposing keys client-side, managing lineups, and handling editor publishing workflows without audio or playback features.",
+    stack: [
+      "React 19",
+      "React Router 7",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express 5",
+      "PostgreSQL",
+    ],
+    demoUrl: "https://music-chords.tech/",
+    image: asset("img/music_chords.png"),
+  },
 ];
 
 const groupedProjects = Array.from(
@@ -608,6 +626,8 @@ function PinIcon() {
 }
 
 export default App;
+
+
 
 
 
