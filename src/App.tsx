@@ -40,7 +40,7 @@ const projects: Project[] = [
       "A training and consultancy website for a PRC-accredited provider, built to present webinars, learning paths, company information, and contact pathways for educators and learners.",
     stack: ["React", "Vite", "Typescript", "Tailwind CSS", "Responsive UI"],
     demoUrl: "https://cequenatraining.com/",
-    image: asset("img/ctc_training.png"),
+    image: asset("img/ctc_training.webp"),
   },
   {
     category: "Freelance",
@@ -49,7 +49,7 @@ const projects: Project[] = [
       "A real estate website for a licensed broker offering residential buying and selling services across Florida, with a focus on the Orlando area.",
     stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "WordPress", "PHP"],
     demoUrl: "https://stacysellshomes.com",
-    image: asset("img/stacy.png"),
+    image: asset("img/stacy.webp"),
   },
   {
     category: "Freelance",
@@ -58,7 +58,7 @@ const projects: Project[] = [
       "A personal real estate website showcasing top-tier buyer, seller, and relocation services throughout the Tri-Valley and San Francisco Bay Area.",
     stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "WordPress", "PHP"],
     demoUrl: "https://soldbylouisa.com/",
-    image: asset("img/louisa.png"),
+    image: asset("img/louisa.webp"),
   },
   {
     category: "Capstone",
@@ -78,7 +78,7 @@ const projects: Project[] = [
       "Fetch API",
     ],
     demoUrl: "https://drive.google.com/file/d/1h0Rs35EeU75jgjwuIQp03ufup37aPrcC/view?t=10",
-    image: asset("img/mihis.png"),
+    image: asset("img/mihis.webp"),
   },
   {
     category: "OJT",
@@ -87,7 +87,7 @@ const projects: Project[] = [
       "A secure ticket management platform for PhilHealth that streamlines request submissions, document handling, and status tracking, with built-in validation, file uploads, and email notifications.",
     stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "PHP", "CodeIgniter", "MySQL"],
     demoUrl: "https://drive.google.com/file/d/1SZT_GJB6aqMV4X3AV-xlSRxek03Z5wVX/view?t=2",
-    image: asset("img/cypher.png"),
+    image: asset("img/cypher.webp"),
   },
   {
     category: "Personal",
@@ -105,7 +105,43 @@ const projects: Project[] = [
       "PostgreSQL",
     ],
     demoUrl: "https://music-chords.tech/",
-    image: asset("img/music_chords.png"),
+    image: asset("img/music_chords.webp"),
+  },
+  {
+    category: "Personal",
+    title: "GA Alliance",
+    description:
+      "A web app used by Korean gamers to manage their in-game alliance — tracking member attendance and boss-run loot splits, with main-IGN login, role-based permissions, and full activity audit logging.",
+    stack: [
+      "Laravel 12",
+      "PHP 8.3",
+      "Inertia",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "MySQL",
+      "Pest",
+    ],
+    demoUrl: "https://gaalliance.online/",
+    image: asset("img/ga_alliance.webp"),
+  },
+  {
+    category: "Personal",
+    title: "MadamF-Store Inventory",
+    description:
+      "A personal sari-sari store management system for tracking product inventory and stock levels, with low-stock alerts, category and status filtering, and customer credit (utang) recording.",
+    stack: [
+      "Java 21",
+      "Spring Boot 3.4",
+      "PostgreSQL",
+      "JPA",
+      "React",
+      "Vite",
+      "Bootstrap",
+      "axios",
+    ],
+    demoUrl: "https://madamfstore.online/",
+    image: asset("img/madamf_store.webp"),
   },
 ];
 
@@ -212,7 +248,7 @@ function App() {
             <span className="font-serif text-xl font-semibold tracking-[0.18em] text-ink sm:text-2xl">
               master eps
             </span>
-            <img src={asset("img/happy.png")} alt="" className="h-10 w-10 object-contain" />
+            <img src={asset("img/happy.webp")} alt="" className="h-10 w-10 object-contain" />
           </a>
 
           <nav className="hidden items-center gap-8 lg:flex">
@@ -436,9 +472,9 @@ function App() {
 
             <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_1.15fr]">
               <div className="about-frame flex justify-center rounded-[2rem] bg-cover bg-center p-4 sm:p-6"
-                style={{ backgroundImage: `url(${asset("img/about-bg-accent.png")})` }}>
+                style={{ backgroundImage: `url(${asset("img/about-bg-accent.webp")})` }}>
                 <img
-                  src={asset("img/about-me.JPG")}
+                  src={asset("img/about-me.webp")}
                   alt="Efraim Gondraneos"
                   className="h-[420px] w-full max-w-md rounded-[999px] border-[6px] border-black object-cover sm:h-[560px]"
                 />
